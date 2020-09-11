@@ -1,0 +1,17 @@
+This is the log for ci4miles
+
+Create the app using composer.
+composer create-project codeigniter4/appstarter project-root
+
+Add entry to hosts 
+127.0.0.1 ci4miles.test
+
+Add entry to httpd.conf
+<VirtualHost *:80>
+    DocumentRoot "/Applications/MAMP/htdocs/ci4miles/public"
+    ServerName ci4miles.test
+    ErrorLog "logs/myproject-error_log"
+    CustomLog "logs/myproject-access_log" common
+</VirtualHost>
+
+Create repository in github
